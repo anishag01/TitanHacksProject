@@ -4,8 +4,6 @@ import math
 print("1. Simple Calculator\n2. Formula Calculator\n3. Converter")
 calc_choice = int(input("Enter the number of the calculator you want to open: "))
 
-# SAMPLE COMMENT
-
 # SIMPLE CALCULATOR
 if (calc_choice == 1):
     print('\n\nSimple Calculator\n')
@@ -289,5 +287,36 @@ elif (calc_choice == 2):
 
 # CONVERTER
 if(calc_choice == 3):
-    print("1. Temperature\n2. Height\n3. Weight")
-    user_choice = int(input())
+    print("Temperature")
+    print("1. Convert from fahrenheit to celsius\n2. Convert from fahrenheit to kelvin\n3. Convert from celsius to fahrenheit")
+    print("4. Convert from celsius to kelvin\n5. Convert from kelvin to fahrenheit\n6. Convert from kelvin to celsius")
+    user_choice = int(input("Enter the corresponding value for which measure you would like to convert: "))
+    temp1 = float(input("Enter the value of the temperature: "))
+    if user_choice == 1:
+        result = (temp1 - 32) * 5 / 9
+        print("The converted temperature is %f" % result)
+
+    elif user_choice == 2:
+        result = (temp1 - 32) * 5 / 9
+        result += 273.15
+        print("The converted temperature is %f" % result)
+
+    elif user_choice == 3:
+        result = temp1 * 1.8 + 32
+        print("The converted temperature is %f" % result)
+
+    elif user_choice == 4:
+        result = temp1 + 273.15
+        print("The converted temperature is %f" % result)
+
+    elif user_choice == 5:
+        result = temp1 - 273.15
+        new_result = result * 1.8 +32
+        print("The converted temperature is %f" % new_result)
+
+    elif user_choice == 6:
+        result = temp1 - 273.15
+        print("The converted temperature is %f" % result)
+
+    else:
+        print("Invalid option")
