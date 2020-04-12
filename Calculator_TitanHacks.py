@@ -4,6 +4,8 @@ import math
 print("1. Simple Calculator\n2. Formula Calculator\n3. Converter")
 calc_choice = int(input("Enter the number of the calculator you want to open: "))
 
+# SAMPLE COMMENT
+
 # SIMPLE CALCULATOR
 if (calc_choice == 1):
     print('\n\nSimple Calculator\n')
