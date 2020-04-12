@@ -1,3 +1,6 @@
+# TitanHacks 2020
+# Samarth Parekh and Arjun Ramprasad
+
 import math
 
 # Heading
